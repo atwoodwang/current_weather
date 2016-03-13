@@ -93,7 +93,7 @@ class Query(object):
         with open(file_path) as f:
             print(f.read())
         print('\n')
-        print("\tCurrent weather is\033[36m %s \033[0min \033[33m%s\033[0m. Last observation "
+        print("Current weather is\033[36m %s \033[0min \033[33m%s\033[0m. Last observation "
               "time(locale) "
               "is \033[35m%s\033[0m." %(
             self.weather[
@@ -102,16 +102,16 @@ class Query(object):
                                                                             self.city,
                                                                             self.weather[
                                                                                 'localObsDateTime']))
-        print('\tThe temperature is \033[32m%d°C\033[0m, but it feels like \033[32m%d°C\033[0m.\n'%(
+        print('The temperature is \033[32m%d°C\033[0m, but it feels like \033[32m%d°C\033[0m.\n'%(
             int(self.weather['temp_C']),int(self.weather['FeelsLikeC'])))
-        print('\tThe humidity is %d.'%int(self.weather['humidity']))
-        print('\tThe visibility is %d miles.'%int(self.weather['visibility']))
-        print('\tThe wind speed is %d miles/hour, direction is %s.'%(int(self.weather[
+        print('The humidity is %d.'%int(self.weather['humidity']))
+        print('The visibility is %d miles.'%int(self.weather['visibility']))
+        print('The wind speed is %d miles/hour, direction is %s.'%(int(self.weather[
                                                                          'windspeedMiles']),
                                                                      self.weather[
                                                                          'winddir16Point']))
-        print('\tThe precipitation is %.1f in millimeters.'%(float(self.weather['precipMM'])))
-        print('\tHava a nice day!!')
+        print('The precipitation is %.1f in millimeters.\n'%(float(self.weather['precipMM'])))
+        print('\033[36mHava a nice day!!\033[0m')
 
 def main(argv):
     try:

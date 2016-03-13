@@ -1,7 +1,7 @@
 #Current Weather
 Retrieve current weather via the command line and display the information with beautiful icons. Written in Python 3.
 
-![Screenshot](http://i.imgur.com/8bXojJh.png)
+![Screenshot](http://i.imgur.com/EB7T5oB.png)
 
 ##Usage
 To ensure the correct display, please run in the full screen mode.
